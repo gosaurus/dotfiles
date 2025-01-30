@@ -10,3 +10,4 @@ set listchars=tab:▸·
 set listchars=trail:·
 :syntax on
 :filetype indent on
+:colorscheme ron
