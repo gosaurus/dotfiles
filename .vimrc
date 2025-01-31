@@ -8,6 +8,14 @@ set smartindent
 set list
 set listchars=tab:▸·
 set listchars=trail:·
+set ruler
+set mouse=a
+set wildignorecase
+
+let mapleader = " "
+nnoremap <leader>vp :Vex<CR>
+
 :syntax on
 :filetype indent on
-:colorscheme ron
+:colorscheme wildcharm
+
