@@ -19,10 +19,11 @@ set statusline=%f
 set statusline+=%m
 set statusline+=%<%h%r%=%b\ 0x%B\ \%l,%l%V\ %P
 set hidden
+set hls ic
 
 :syntax on
 :filetype indent on
-:colorscheme habamax
+:colorscheme retrobox 
 
 " Remaps
 let mapleader = " "

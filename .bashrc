@@ -3,6 +3,9 @@
 # $HOME = /Users/sc: 
 PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+
+# only for TechSwith
+alias poetryrun="C:\Users\SteChi\AppData\Roaming\Python\Scripts\poetry"
 # Source global definitions from etc
 
 if [ -f /etc/bashrc ]; then
