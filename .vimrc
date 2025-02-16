@@ -1,6 +1,3 @@
-let &t_EI = "\1\e[2 q\2"
-let &t_SI = "\e[1 q"
-
 set scrolloff=8
 set number
 set relativenumber
