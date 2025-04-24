@@ -8,7 +8,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab
 set smartindent
 set list
-set listchars=tab:▸·, trail:·,space:·
+set listchars=tab:▸·,trail:·,space:·
 set ruler
 set wildignorecase
 set incsearch
@@ -18,11 +18,7 @@ set statusline=%f
 set statusline+=%m
 set statusline+=%<%h%r%=%b\ 0x%B\ \%l,%v\ %P
 set mouse=a
-
 set hidden
-
-syntax on
-:filetype indent on
 
 :syntax on
 :filetype indent on
@@ -49,7 +45,6 @@ endif
 
 " Plugins
 call plug#begin()
-
 Plug 'junegunn/fzf', { 'do': { -> fzt#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
