@@ -1,25 +1,20 @@
 # .bashrc
-# $Check /bin in HOME before other PATH
 # $HOME = /Users/sc: 
 PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
-# only for TechSwith
-alias poetryrun="C:\Users\SteChi\AppData\Roaming\Python\Scripts\poetry"
 # Source global definitions from etc
-
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
-
 fi
 
-# My aliases
+# Aliases
 alias minilib=". start_minilib && cd ~/Documents/Coding/repos/projects/mini_lib"
 alias staticblog=". ./Scripts/start_static_blog && cd ~/Documents/Coding/repos/projects/static_blog"
 alias TS="cd /Users/sc/Documents/Coding/repos/TS/"
 
 # LSCOLOR settings 
-# see https://web.archive.org/web/20200709152717/http://linux-sxs.org/housekeeping/lscolors.html
+# These work: https://web.archive.org/web/20200709152717/http://linux-sxs.org/housekeeping/lscolors.html
 # ====================
 export CLICOLOR=1
 export LSCOLORS=GxFxEDDxbxegedabagacad
