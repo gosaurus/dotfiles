@@ -8,7 +8,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab
 set smartindent
 set list
-set listchars=tab:▸·,trail:·,space:·
+set listchars=tab:▸·,extends:>,trail:·,space:·
 set ruler
 set wildignorecase
 set incsearch
