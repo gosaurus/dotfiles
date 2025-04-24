@@ -1,49 +1,41 @@
+let &t_EI = "\1\e[2 q\2"
+let &t_SI = "\e[1 q"
+
 set scrolloff=8
 set number
 set relativenumber
-set tabstop=4 softtabstop=4
-set shiftwidth=4
+set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab
 set smartindent
 set list
-set listchars=tab:▸·,trail:·,space:·
+set listchars=tab:▸·, trail:·,space:·
+set ruler
+set wildignorecase
 set incsearch
-set wildmode=list:longest,list:full
 set hls ic
-
 set laststatus=2
 set statusline=%f
 set statusline+=%m
-set statusline+=%<%h%r%=%b\ 0x%B\ \%l,%l%V\ %P
+set statusline+=%<%h%r%=%b\ 0x%B\ \%l,%v\ %P
+set mouse=a
+
 set hidden
 
-syntax enable
-set background=dark
-" set t_Co=16
-filetype indent on
-let g:solarized_termcolors=256
-colorscheme retrobox
+syntax on
+:filetype indent on
 
-" Cursor for modes
-let &t_EI = "\1\e[2 q\2"
-let &t_SI = "\e[1 q"
+:syntax on
+:filetype indent on
+:colorscheme retrobox
 
 " Remaps
 let mapleader = " "
 nnoremap <leader>vp :Vex<CR>
-nnoremap <leader><CR> :so /c/Users/SteChi<CR>
+nnoremap <leader><CR> :so .<CR>
 nnoremap <C-p> :GFiles<CR>
 nnoremap <C-k> :cnext<CR>
 nnoremap <C-j> :cprev<CR>
 nnoremap <C-e> :copen<CR>
-
-" Close split
-nnoremap <C-w>c :close<CR>
-nnoremap <C-w>o :only<CR>
-
-" New split
-nnoremap <C-w>v :vsplit<CR>
-nnoremap <C-w>n :new<CR>
 
 " Esc insert alternatives: <C-[>
 imap jh <Esc>
@@ -61,13 +53,6 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzt#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-sensible'
-Plug 'altercation/vim-colors-solarized'
-Plug 'lifepillar/vim-solarized8'
-
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'machakann/vim-highlightedyank'
-
 Plug 'dense-analysis/ale'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
@@ -75,6 +60,8 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/async.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
 
 " ESlint
