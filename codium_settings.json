@@ -1,1 +1,28 @@
-/Users/sc/Library/Application Support/VSCodium/User/settings.json
+{
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "workbench.enableExperiments": false,
+    "update.mode": "start",
+    "update.mode": "manual",
+    "workbench.enableExperiments": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.settings.applyToAllProfiles": [
+
+        ],
+    "editor.fontSize": 14,
+    "editor.codeLensFontSize": 1,
+    "editor.rulers": [ 88 ],
+    "editor.lineNumbers": "relative",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.indentSize": "tabSize",
+    "[css]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.tabSize": 2
+    },
+    "terminal.integrated.fontSize": 14,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)"
+}
