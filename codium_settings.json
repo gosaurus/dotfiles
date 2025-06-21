@@ -1,11 +1,11 @@
 {
-    "workbench.colorTheme": "Tomorrow Night Blue",
-    "workbench.enableExperiments": false,
-    "update.mode": "start",
+    "workbench.colorTheme": "Solarized Light",
     "update.mode": "manual",
     "workbench.enableExperiments": false,
     "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "workbench.settings.applyToAllProfiles": [
+
 
         ],
     "editor.fontSize": 14,
