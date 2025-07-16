@@ -20,9 +20,9 @@ set statusline+=%<%h%r%=%b\ 0x%B\ \%l,%v\ %P
 set mouse=a
 set hidden
 
-:syntax on
-:filetype indent on
-:colorscheme retrobox
+syntax on
+filetype indent on
+colorscheme retrobox
 
 " Remaps
 let mapleader = " "
