@@ -1,8 +1,7 @@
 {
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Solarized Dark",
     "update.mode": "manual",
     "workbench.enableExperiments": false,
-    "telemetry.enableTelemetry": false,
     "telemetry.telemetryLevel": "off",
     "workbench.settings.applyToAllProfiles": [
 

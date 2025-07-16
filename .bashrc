@@ -1,4 +1,5 @@
 # .bashrc
+# $Check /bin in HOME before other PATH
 # $HOME = /Users/sc: 
 PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
@@ -8,13 +9,14 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# Aliases
+# My aliases
 alias minilib=". start_minilib && cd ~/Documents/Coding/repos/projects/mini_lib"
 alias staticblog=". ./Scripts/start_static_blog && cd ~/Documents/Coding/repos/projects/static_blog"
 alias TS="cd /Users/sc/Documents/Coding/repos/TS/"
+alias cpsettings=". ~/Scripts/copy_and_update_settings_json"
 
 # LSCOLOR settings 
-# These work: https://web.archive.org/web/20200709152717/http://linux-sxs.org/housekeeping/lscolors.html
+# see https://web.archive.org/web/20200709152717/http://linux-sxs.org/housekeeping/lscolors.html
 # ====================
 export CLICOLOR=1
 export LSCOLORS=GxFxEDDxbxegedabagacad
