@@ -7,10 +7,12 @@ set relativenumber
 set tabstop=4 softtabstop=4 shiftwidth=4
 set smartindent
 set list
-set listchars=tab:\ \ ┊,extends:>,trail:·
+set listchars=tab:⍿·,extends:>,trail:·
 set ruler
 set wildignorecase
 set incsearch
+set ignorecase
+set smartcase
 set hlsearch
 set mouse=a
 set hidden
@@ -18,6 +20,7 @@ set termguicolors
 set statusline=%f
 set statusline+=%m
 set statusline+=%<%h%r%=%b\ 0x%B\ \%l,%v\ %P
+set clipboard=unnamedplus
 set showcmd
 syntax on
 filetype indent on
@@ -27,32 +30,24 @@ set omnifunc=syntaxcomplete#Complete
 " Remaps
 let mapleader = " "
 nnoremap <leader>vp :Vex<CR>
-nnoremap <leader><CR> :so .<CR>
 nnoremap <C-p> :GFiles<CR>
 nnoremap <C-k> :cnext<CR>
 nnoremap <C-j> :cprev<CR>
 nnoremap <C-e> :copen<CR>
 
-" Esc insert alternatives: <C-[>
-imap jh <Esc>
-
-" For highlightedyank
-if !exists('##TextYankPost')
-  nmap y <Plug>(highlightedyank)
-  xmap y <Plug>(highlightedyank)
-  omap y <Plug>(highlightedyank)
-endif
-
 " Plugins
 call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary', {'branch': 'master'}
+Plug 'tpope/vim-fugitive', {'branch': 'master'}
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'machakann/vim-highlightedyank'
-Plug 'arcticicestudio/nord-vim'
+Plug 'dense-analysis/ale', {'branch': 'master'}
+Plug 'junegunn/seoul256.vim'
 call plug#end()
 
-colorscheme nord
-let g:nord_bold_vertical_line = 1 
+let g:seoul256_background = 235
+colorscheme seoul256
 set colorcolumn=88
