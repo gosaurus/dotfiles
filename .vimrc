@@ -5,9 +5,9 @@ set encoding=utf8
 set scrolloff=8
 set relativenumber
 set tabstop=4 softtabstop=4 shiftwidth=4
+set expandtab
 set autoindent
 set smartindent
-set expandtab
 set fileformat=unix
 set list
 set listchars=tab:⍿·,extends:>,trail:·
@@ -26,8 +26,7 @@ set statusline+=%<%h%r%=%b\ 0x%B\ \%l,%v\ %P
 set clipboard=unnamedplus
 set showcmd
 syntax on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 
 " Remaps
