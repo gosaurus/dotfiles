@@ -5,7 +5,10 @@ set encoding=utf8
 set scrolloff=8
 set relativenumber
 set tabstop=4 softtabstop=4 shiftwidth=4
+set autoindent
 set smartindent
+set expandtab
+set fileformat=unix
 set list
 set listchars=tab:⍿·,extends:>,trail:·
 set ruler
