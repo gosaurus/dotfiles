@@ -25,6 +25,7 @@ set statusline+=%m
 set statusline+=%<%h%r%=%b\ 0x%B\ \%l,%v\ %P
 set clipboard=unnamedplus
 set showcmd
+set history=10000
 syntax on
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
