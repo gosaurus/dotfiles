@@ -56,9 +56,10 @@ Plug 'tpope/vim-commentary', {'branch': 'master'}
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'machakann/vim-highlightedyank'
 Plug 'dense-analysis/ale', {'branch': 'master'}
-Plug 'junegunn/seoul256.vim'
+Plug 'noahfrederick/vim-noctu'
+Plug 'rose-pine/vim'
 call plug#end()
 
-let g:seoul256_background = 233
-colorscheme seoul256
+set background=dark
+colorscheme rosepine
 set colorcolumn=88
