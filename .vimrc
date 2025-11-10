@@ -38,6 +38,15 @@ set hidden
 syntax on
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
+set completeopt=longest,menuone
+
+" Centralise temporary files
+set dir=~/.vim/_swap//
+set backup
+set backupdir=~/.vim/_backup/,~/tmp,.
+
+set undofile
+set undodir=~/.vim/_undo/
 
 " Remaps
 let mapleader = " "
